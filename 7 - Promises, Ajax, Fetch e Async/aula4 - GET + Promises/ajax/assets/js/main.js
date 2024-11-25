@@ -1,7 +1,7 @@
 const request = obj => {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
-    xhr.open(obj.method, obj.url, true);
+    xhr.open(obj.method, obj.url, true); // true se for assincrona
     xhr.send();
 
     xhr.addEventListener('load', () => {
